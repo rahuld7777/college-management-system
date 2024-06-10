@@ -1,0 +1,93 @@
+.text{
+    font-size: 50px;
+    color: azure;
+}
+
+.carousel-caption p{
+    line-height: 1.9;
+    font-size: 18px;
+    margin: auto;
+    
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+;
+    z-index: 1;
+}
+.carousel p{
+    font-size: 25px;
+    color: red;
+}
+/* Default styles */
+/* You can put your existing CSS styles here */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	.about-text {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
+.carousel-item{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.dept{
+    text-align: center;
+}
+.card-body{
+    border-radius: 20px;
+}
+.card-no{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+.social{
+    color: rgb(252, 252, 252);
+    background-color: black;
+    display: inline-block;
+
+}
+.text-white{
+    text-decoration: none;
+}

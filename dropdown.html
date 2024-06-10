@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="dropdown.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Freeman&family=Martian+Mono:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+     
+    
+     .save-btn button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        color: #edf2f4;
+
+        padding: 12px 50px;
+        top: 3%;
+        border: 3px solid white;
+        background-color: #7360DF;
+        color: #ffffff;
+        font-size: 20px;
+        border-radius: 8px;
+        position: absolute;
+        right: 20%;
+        cursor: pointer;
+   
+     
+    }
+
+ 
+
+      .save{
+        position: absolute;
+        display: block;
+          
+     
+
+      }
+     
+      
+    .nextbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: white;
+   border: 3px solid #874CCC;
+  text-decoration: none;
+  list-style: none;
+  margin: 50px 500px;
+ color: #824CCC;
+  
+ font-family: "Montserrat", "sans-serif";
+ width: 500px;
+ height: 50px;
+ font-size: 30px;
+
+
+
+    
+}
+.nextbtn:hover{
+    background-color: #874CCC;
+    color:white;
+}
+
+        .table {
+            background-color: #F0F2FA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        input[type="text"] {
+            width: 300px;
+            height: 30px;
+            font-size: 12px;
+            margin: 10px 0 10px 0;
+            border: 2px solid silver;
+            border-radius: 4px;
+
+        }
+
+        input[type="text"]:hover {
+            border-color: #824CCC;
+        }
+
+        .faq-container {
+
+
+
+            max-width: 1500px;
+
+            margin: 24px auto;
+
+            border-radius: 50px;
+
+            font-family: "Roboto", sans-serif;
+
+        }
+
+
+
+
+        details summary .icon svg {
+
+            height: 24px;
+
+            display: flex;
+
+        }
+
+
+        .table ::-webkit-scrollbar {
+            width: 30px;
+        }
+
+        details .content {
+
+            padding: 16px;
+
+            line-height: 1.8;
+
+            margin-top: -10px;
+
+        }
+
+        input select option {
+            height: 30px;
+            background-color: #874CCC;
+        }
+
+
+        details summary {
+
+            cursor: pointer;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 16px;
+
+            padding: 16px 24px;
+
+            background: #F7F5FD;
+
+            color: black;
+
+            user-select: none;
+
+            transition: all 120ms ease;
+
+        }
+
+
+
+        details {
+
+            background: #edf2f4;
+
+            border-radius: 4px;
+
+            overflow: hidden;
+
+            margin-bottom: 12px;
+
+        }
+
+
+
+        details summary::-webkit-details-marker {
+
+            display: none;
+
+        }
+
+
+
+        details[open] summary {
+
+            background: #874CCC;
+            color: white;
+            margin-bottom: 10px;
+
+        }
+
+
+
+        details summary .icon {
+
+            transition: all 120ms ease;
+
+        }
+
+        .toogle {
+            overflow: hidden;
+            overflow-y: scroll;
+
+        }
+
+
+
+
+
+        details[open] summary .icon {
+
+            rotate: 180deg;
+
+        }
+    </style>
+    <script>
+  
+    
+    function myfunc(){
+        alert("Your progress is saved");
+    }
+    </script>
+    <div class="container">
+
+        <div class="leftBanner">
+            <div class="banner">
+                <div class="save-btn"  onclick="myfunc()">
+                    <button class="btn-save"><i class="fa-regular fa-floppy-disk" style="color: #ffffff;"></i>Save</button>
+                   
+                </div>
+                <h1>Student Details </h1>
+                <div class="toogle">
+                    <div class="faq-container">
+
+                        <details>
+
+                            <summary>
+
+                                PERSONAL DETAILS
+
+                                <span class="icon">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+
+                                    </svg>
+
+                                </span>
+
+                            </summary>
+
+                            <div class="content">
+
+
+                                <div class="table">
+
+                                    <form>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <H3>NAME:</H3>
+                                                </td>
+
+
+
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    GENDER :
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="GENDER">MALE
+                                                    <input type="radio" name="GENDER">FEMALE
+                                                    <input type="radio" name="GENDER">OTHERS
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    DATE OF BIRTH :
+                                                </td>
+                                                <td>
+                                                    <input type="date" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    DEPARTMENT :
+                                                </td>
+                                                <td>
+                                                    <select name="DEPARTMENT" id="DEPARTMENT">
+                                                        <option value=" "> </option>
+                                                        <option value="ECE">ECE</option>
+                                                        <option value="BME">BME</option>
+                                                        <option value="EEE">EEE</option>
+                                                        <option value="CSE">CSE</option>
+                                                        <option value="AIDS">AIDS</option>
+                                                        <option value="IT">IT</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    EMAIL :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    AADHAR NUMBER :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    FATHER'S NAME :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    FATHER'S OCCUPATION :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    MOTHER'S NAME :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    MOTHER'S OCCUPATION :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    ANNUAL INCOME :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    NATIONALITY :
+                                                </td>
+                                                <td>
+                                                    <select name="NATIONALITY" id="NATIONALITY">
+                                                        <option value=" "> </option>
+                                                        <option value="INDIA">INDIA</option>
+                                                        <option value="CHINA">CHINA</option>
+                                                        <option value="UNITED STATES">UNITED STATES</option>
+                                                        <option value="INDONESIA">INDONESIA</option>
+                                                        <option value="PAKISTAN">PAKISTAN</option>
+                                                        <option value="OTHER NATIONALITY">OTHER NATIONALITY</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    STATE :
+                                                </td>
+                                                <td>
+                                                    <select name="STATE" id="STATE">
+                                                        <option value=" "> </option>
+                                                        <option value="TAMILNADU">TAMILNADU</option>
+                                                        <option value="WESTBENGAL">WESTBENGAL</option>
+                                                        <option value="BIHAR">BIHAR</option>
+                                                        <option value="KERALA">KERALA</option>
+                                                        <option value="RAJASTHAN">RAJASTHAN</option>
+                                                        <option value="PUNJAB">PUNJAB</option>
+                                                        <option value="ASSAM">ASSAM</option>
+                                                        <option value="OTHER STATES">OTHER STATES</option>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    DISTRICTS :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    RELIGION :
+                                                </td>
+                                                <td>
+                                                    <select name="RELIGION" id="RELIGION">
+                                                        <option value=" "> </option>
+                                                        <option value="HINDU">HINDU</option>
+                                                        <option value="MUSLIM">MUSLIM</option>
+                                                        <option value="CHRISTIAN">CHRISTIAN</option>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    COMMUNITY :
+                                                </td>
+                                                <td>
+                                                    <select name="COMMUNITY" id="COMMUNTIY">
+                                                        <option value=" "> </option>
+                                                        <option value="BC">BC</option>
+                                                        <option value="MBC">MBC</option>
+                                                        <option value="OC">OC</option>
+                                                        <option value="GENERAL">GENERAL</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    CASTE :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                    <a href="dropdown.html">next page</a>
+
+
+                                </div>
+
+                            </div>
+
+                        </details>
+
+
+
+                        <details>
+
+                            <summary>
+
+                                ACADEMIC DETAILS
+
+                                <span class="icon">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+
+                                    </svg>
+
+                                </span>
+
+                            </summary>
+
+                            <div class="content">
+
+                                <center>
+                                    <form>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    10th MARK :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    10th PERCENTAGE :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    12th MARK :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    12th PERCENTAGE :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    CUT OFF :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    CGPA :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    ADMISSION :
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="ADMISSION">SWC
+                                                    <input type="radio" name="ADMISSION">MQ
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    BACKLOGS :
+                                                </td>
+                                                <td>
+                                                    <input type="number" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    HISTORY OF ARREAR :
+                                                </td>
+                                                <td>
+                                                    <input type="number" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    FIRST GRADUATION :
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" name="FIRST GRADUATION">YES
+                                                    <input type="checkbox" name="FIRST GRADUATION">NO
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    PMSS ELIGIBILITY :
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" name="PMSS ELIGIBILITY">YES
+                                                    <input type="checkbox" name="PMSS ELIGIBILITY">NO
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    BC/MBC ELIGIBILITY :
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" name="BC/MBC ELIGIBILITY">YES
+                                                    <input type="checkbox" name="BC/MBC ELIGIBILITY">NO
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </center>
+
+
+                            </div>
+
+                        </details>
+
+
+
+                        <details>
+
+                            <summary>
+
+                                CONTACT DEATAILS:
+                                <span class="icon">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+
+                                    </svg>
+
+                                </span>
+
+                            </summary>
+
+                            <div class="content">
+
+                                <center>
+
+                                    <form>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    STUDENT MOBILE NO :
+                                                </td>
+                                                <td>
+                                                    <span class="country-code">+91</span>
+                                                    <input type="tel" placeholder="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    STUDENT'S EMAIL :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    FATHER'S MOBILE NO :
+                                                </td>
+                                                <td>
+                                                    <span class="country-code">+91</span>
+                                                    <input type="tel" placeholder="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    FATHER'S EMAIL :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    MOTHER'S MOBILE NO :
+                                                </td>
+                                                <td>
+                                                    <span class="country-code">+91</span>
+                                                    <input type="tel" placeholder="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    MOTHER'S EMAIL :
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    RESIDENTIAL ADDRESS :
+                                                </td>
+                                                <td>
+                                                    <textarea rows="6" cols="50"
+                                                        placeholder="Enter your text here....."></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    PERMANENT ADDRESS :
+                                                </td>
+                                                <td>
+                                                    <textarea rows="6" cols="50"
+                                                        placeholder="Enter your text here....."></textarea>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </form>
+                                </center>
+
+</body>
+
+</html>
+
+</div>
+
+</details>
+
+
+<details>
+
+    <summary>
+
+        BANK DETAILS
+        <span class="icon">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+
+            </svg>
+
+        </span>
+
+    </summary>
+
+    <div class="content">
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>BANK DETAILS</title>
+        </head>
+
+        <body>
+            <center>
+                <h1>BANK DETAILS</h1>
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                STUDENT ACCOUNT NO :
+                            </td>
+                            <td>
+                                <input type="text" name="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                BANK NAME :
+                            </td>
+                            <td>
+                                <select name="BANK NAME" id="BANK NAME">
+                                    <option value=" "> </option>
+                                    <option value="HDFC BANK">HDFC BANK</option>
+                                    <option value="ICICI BANK">ICICI BANK</option>
+                                    <option value="SBI BANK">SBI BANK</option>
+                                    <option value="KOTAK MAHINDRA BANK">KOTAK MAHINDRA BANK</option>
+                                    <option value="AXIS BANK">AXIS BANK</option>
+                                    <option value="OTHER BANK">OTHER BANK</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                BRANCH NAME :
+                            </td>
+                            <td>
+                                <input type="text" name="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                IFSC CODE :
+                            </td>
+                            <td>
+                                <input type="text" name="">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </center>
+
+
+    </div>
+
+</details>
+</div>
+<style>
+   
+      
+</style>
+<a class="nextbtn" href="#">Next</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</body>
+
+</html>
